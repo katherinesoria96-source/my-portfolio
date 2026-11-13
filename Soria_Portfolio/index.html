@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katherine Joy M. Soria | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#home" class="logo">KS<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects &amp; Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Katherine Joy M. Soria</h1>
+        <img src="FP_Kath.jpg.png" alt="Photo of Katherine Joy M. Soria" class="name-photo"/>
+        <h2>I'm a <span id="typing"></span><span class="cursor">|</span></h2>
+        <p class="lead">
+          BS Computer Science student at Cavite State University – Bacoor Campus,
+          eager to turn creative ideas into clean code.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View My Work</a>
+          <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+      </div>
+    
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Hi! I'm <strong>Katherine Joy M. Soria</strong>, a BS Computer Science student
+            at Cavite State University – Bacoor Campus. I'm just a student eager for new
+            experiences and driven to explore, with a goal of becoming a web developer someday.
+          </p>
+          <p>
+            Outside of coding, I love dancing, reading books, and listening to music. I'm always
+            eager to learn, collaborate on innovative tech projects, and turn creative ideas into
+            clean code.
+          </p>
+          <ul class="info-list">
+            <li><strong>Location:</strong> Bacoor, Cavite, Philippines</li>
+            <li><strong>Education:</strong> BS Computer Science, CvSU – Bacoor Campus</li>
+            <li><strong>Email:</strong> Katherinesoria96@gmail.com</li>
+          </ul>
+        </div>
+        <div class="skills">
+          <h3>Skills</h3>
+          <div class="skill-tags">
+            <span>Java</span>
+            <span>Python</span>
+            <span>HTML &amp; CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS & CERTIFICATES -->
+    <section id="projects" class="section alt">
+      <h2 class="section-title">Projects &amp; Certificates</h2>
+
+      <div class="tabs">
+        <button class="tab active" data-filter="all">All</button>
+        <button class="tab" data-filter="project">Projects</button>
+        <button class="tab" data-filter="certificate">Certificates</button>
+      </div>
+
+      <div class="cards">
+        <article class="card" data-type="project">
+          <div class="card-body">
+            <span class="tag">Project</span>
+            <h3>Ocean View System</h3>
+            <p>A website project built as part of my Computer Science studies. See the source code and full details on GitHub.</p>
+            <div class="chips"><span>Website</span></div>
+            <a href="https://github.com/katherinesoria96-source/ocean-view-system" class="link" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+        </article>
+
+        <article class="card" data-type="certificate">
+          <div class="card-body">
+            <span class="tag cert">Certificate</span>
+            <h3>Avalanche Certificate</h3>
+            <p>Certificate earned from Avalanche, an event for BS Computer Science students.</p>
+          </div>
+        </article>
+
+        <article class="card" data-type="certificate">
+          <div class="card-body">
+            <span class="tag cert">Certificate</span>
+            <h3>Vice President's Lister</h3>
+            <p>Academic recognition awarded at Cavite State University – Bacoor Campus.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Have a question, an idea, or just want to say hi? Send me a message!</p>
+          <ul>
+            <li>📧 <a href="mailto:Katherinesoria96@gmail.com">Katherinesoria96@gmail.com</a></li>
+            <li>📍 Bacoor, Cavite, Philippines</li>
+          </ul>
+          <div class="socials">
+            <a href="https://github.com/katherinesoria96-source" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.facebook.com/share/1GAU6MgiUc/" target="_blank" rel="noopener">Facebook</a>
+          </div>
+        </div>
+
+        <form id="contactForm" novalidate>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+          <button type="submit" class="btn primary">Send Message</button>
+          <p id="formStatus" class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Katherine Joy M. Soria. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
